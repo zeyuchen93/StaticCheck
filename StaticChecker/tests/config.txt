@@ -1,0 +1,60 @@
+CheckerEnable
+{
+	TemplateChecker = true
+	CallGraphChecker = true
+	SplitBasicBlockwithFunCall = true
+	ReturnStackAddrChecker = true
+	Checker5 = true
+}
+
+PrintLog
+{
+	level = 2
+	TemplateChecker = false
+	ReturnStackAddrChecker = true
+	Checker5 = true
+}
+
+Framework
+{
+	queue_size = 600
+}
+
+TemplateChecker
+{
+	request_fun = 2
+}
+
+CFG
+{
+	SplitBasicBlockwithFunCall = true
+	SplitBasicBlockwithCXXNew = false
+	SplitBasicBlockwithCXXConstruct = false
+}
+
+CallGraph
+{
+	showDestructor = true
+	showFunctionPtr = true
+	showLambda = true
+	inlineAndTemplate = true
+	showLibFunc = true
+	ignoreNoCalledSystemHeader = false
+	printToConsole =false
+}
+
+ReturnStackAddrChecker
+{
+
+}
+
+Checker5
+{
+
+}
+pathToReport
+{
+	path = ./
+}
+
+
